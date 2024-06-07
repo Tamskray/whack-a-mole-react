@@ -12,10 +12,59 @@
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
 img {
   -webkit-user-drag: none;
+}
+
+button {
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border-style: none;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity: 70%;
+  transition: 0.2s;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 0.2s ease;
+}
+
+html.bomb-hit {
+  box-shadow: 0 0 200px rgba(241, 6, 6, 0.9) inset;
+  transition: box-shadow 0.2s ease;
+}
+
+.player-health {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  width: auto;
+  height: 40px;
+}
+
+.game-start-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  padding: 10px;
 }
